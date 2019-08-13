@@ -19,7 +19,7 @@ export default Ember.Component.extend({
   },
 
   @computed("type", "postNumber")
-  shareTitle(type, postNumber) {
+    shareTitle(type, postNumber) {
     if (type === "topic") {
       return I18n.t("share.topic");
     }
@@ -37,12 +37,14 @@ export default Ember.Component.extend({
   _focusUrl() {
     const link = this.link;
     if (!this.capabilities.touch) {
+      alert(/111/);
       const $linkInput = $("#share-link input");
       $linkInput.val(link);
 
       // Wait for the fade-in transition to finish before selecting the link:
       window.setTimeout(() => $linkInput.select().focus(), 160);
     } else {
+      alert(/222/);
       const $linkForTouch = $("#share-link .share-for-touch a");
       $linkForTouch.attr("href", link);
       $linkForTouch.text(link);

@@ -40,10 +40,11 @@ export default {
   addSource(source) {
     // backwards compatibility for plugins
     if (source.faIcon) {
+      var azz = source.faIcon.replace("fa-", "");
+      alert("azz: "+ azz);
       source.icon = source.faIcon.replace("fa-", "");
       delete source.faIcon;
     }
-
     _sources[source.id] = source;
   },
 
