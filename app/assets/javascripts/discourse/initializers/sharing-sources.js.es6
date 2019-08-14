@@ -50,5 +50,17 @@ export default {
         );
       }
     });
+
+    Sharing.addSource({
+      id: 'weibo',
+      icon: 'fab-weibo',
+      title: I18n.t('share.weibo'),
+      shouldOpenInPopup: true,
+      generateUrl(link, title) {
+          return "http://service.weibo.com/share/share.php?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title);
+      }
+
+    });
+
   }
 };
