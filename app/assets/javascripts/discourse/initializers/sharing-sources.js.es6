@@ -39,7 +39,7 @@ export default {
     Sharing.addSource({
       id: "email",
       icon: "envelope-square",
-      title: I18n.t("share.emailxxxx"),
+      title: I18n.t("share.email"),
       generateUrl: function(link, title) {
         return (
           "mailto:?to=&subject=" +
@@ -53,56 +53,27 @@ export default {
       shouldOpenInPopup: true
     });
 
-
-  // weibo: "fab-weibo",
-  // weixin: "fab-weixin",
-
     Sharing.addSource({
-      id: 'google',
-      // faIcon: 'fa-google',
-      icon: "fab-twitter-square",
-      title: "google",
-      generateUrl: function(link, title) {
-        return "http://www.linkedin.com/shareArticle?mini=true&url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title);
-      },
-      shouldOpenInPopup: true,
-      popupHeight: 265
+        id: 'weibo',
+        icon: 'fab-weibo',
+        title: I18n.t('share.weibo'),
+        generateUrl(link, title) {
+          return "http://service.weibo.com/share/share.php?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title);
+        },
+        shouldOpenInPopup: true,
+        popupHeight: 265
     });
 
-    // Sharing.addSource({
-    //     id: 'weibo',
-    //     faIcon: 'fa-weibo',
-    //     title: I18n.t('share.weibo'),
-    //     generateUrl(link, title) {
-    //       return "http://service.weibo.com/share/share.php?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title);
-    //     }
-    //     // shouldOpenInPopup: true,
-    //     // popupHeight: 370
-    //   });
-
-    // Sharing.addSource({
-    //   id: 'linkedin',
-    //   icon: 'fa-linkedin-square',
-    //   generateUrl: function(link, title) {
-    //     return "http://www.linkedin.com/shareArticle?mini=true&url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title);
-    //   },
-    // });
-
-    // Sharing.addSource({
-    //   id: "weibo",
-    //   icon: "fab-link-square",
-    //   title: "link",
-    //   generateUrl: function(link, title) {
-    //     return (
-    //       "http://service.weibo.com/share/share.php?url=" +
-    //       encodeURIComponent(
-    //         "[" + Discourse.SiteSettings.title + "] " + title
-    //       ) +
-    //       "&body=" +
-    //       encodeURIComponent(link)
-    //     );
-    //   }
-    // });
+    Sharing.addSource({
+        id: 'weixin',
+        icon: 'fab-weixin',
+        title: I18n.t('share.weixin'),
+        generateUrl(link, title) {
+          return "http://s.jiathis.com/qrcode.php?url=" + encodeURIComponent(link);
+        },
+        shouldOpenInPopup: true,
+        popupHeight: 265
+    });
 
 
   }
