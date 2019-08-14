@@ -58,9 +58,18 @@
       // Adheres to Facebook brand guidelines
       color: dark-light-choose($facebook, white);
     }
+
     .d-icon-fab-twitter-square {
       // Adheres to Twitter brand guidelines
       color: dark-light-choose($twitter, white);
+    }
+
+    .d-icon-fab-weibo {
+      color: dark-light-choose($weibo, white);
+    }
+
+   .d-icon-fab-weixin {
+      color: dark-light-choose($weixin, white);
     }
   }
 
@@ -79,7 +88,7 @@
       align-items: center;
       flex-wrap: wrap;
       flex-direction: row;
-      max-width: 45%;
+      max-width: 60%;
 
       .social-link {
         margin-right: s(2);
