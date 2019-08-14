@@ -191,6 +191,9 @@ module SvgSprite
     "wrench"
   ])
 
+  SVG_ICONS.add("fab-weibo")
+  SVG_ICONS.add("fab-weixin")
+
   FA_ICON_MAP = { 'far fa-' => 'far-', 'fab fa-' => 'fab-', 'fas fa-' => '', 'fa-' => '' }
 
   CORE_SVG_SPRITES = Dir.glob("#{Rails.root}/vendor/assets/svg-icons/**/*.svg")
