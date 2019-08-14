@@ -144,6 +144,8 @@ en:
       twitter: "Share this link on Twitter"
       facebook: "Share this link on Facebook"
       email: "Send this link in an email"
+      weibo: "Share this link on Weibo"
+      weixin: "Share this link on Wechat"
 
     action_codes:
       public_topic: "made this topic public %{when}"

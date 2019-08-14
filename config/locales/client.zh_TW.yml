@@ -95,6 +95,9 @@ zh_TW:
       twitter: "分享連結到Twitter"
       facebook: "分享連結到Facebook"
       email: "以電子郵件傳送連結"
+      weibo: "分享連結到 微博"
+      weixin: "分享連結到 微信"
+
     action_codes:
       public_topic: "於 %{when}發佈這個話題"
       private_topic: "於 %{when} 私訊這個話題"

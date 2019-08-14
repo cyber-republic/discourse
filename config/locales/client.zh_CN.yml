@@ -92,9 +92,12 @@ zh_CN:
       topic_html: '主题: <span class="topic-title">%{topicTitle}</span>'
       post: "帖子 #%{postNumber}"
       close: "关闭"
-      twitter: "分享至 Twitter"
-      facebook: "分享至 Facebook"
+      twitter: "分享到 Twitter"
+      facebook: "分享到 Facebook"
       email: "通过电子邮件分享"
+      weibo: "分享到 微博"
+      weixin: "分享到 微信"
+
     action_codes:
       public_topic: "于%{when}设置为公共主题"
       private_topic: "于%{when}将该话题转换为私信"
