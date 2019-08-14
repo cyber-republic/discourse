@@ -219,12 +219,14 @@ basic:
   share_links:
     client: true
     type: list
-    default: "twitter|facebook|email"
+    default: "twitter|facebook|email|weibo|wechat"
     allow_any: false
     choices:
       - twitter
       - facebook
       - email
+      - weibo
+      - wechat
   desktop_category_page_style:
     client: true
     enum: "CategoryPageStyle"
