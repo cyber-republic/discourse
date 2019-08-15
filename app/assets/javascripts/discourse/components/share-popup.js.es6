@@ -108,6 +108,7 @@ export default Ember.Component.extend({
   },
 
   _clickHandler(event) {
+	alert(/_clickHandler/)
     if (!this.element || this.isDestroying || this.isDestroyed) {
       return;
     }
@@ -124,6 +125,12 @@ export default Ember.Component.extend({
     const postNumber = $currentTarget.data("post-number");
     const postId = $currentTarget.closest("article").data("post-id");
     const date = $currentTarget.children().data("time");
+
+    var qrval = window.location.protocol + "//" + window.location.host + url;
+    new QRious({
+      element: document.getElementById("qrimg"),
+      value: qrval
+    });
 
     this.setProperties({ postNumber, date, postId });
 
