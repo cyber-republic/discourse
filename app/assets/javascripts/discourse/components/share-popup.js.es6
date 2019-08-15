@@ -134,6 +134,13 @@ export default Ember.Component.extend({
       this._showUrl($currentTarget, url);
     }
 
+    var qrval = window.location.protocol + "//" + window.location.host + url;
+
+    new QRious({
+      element: document.getElementById("qrimg"),
+      value: qrval
+    });
+
     return false;
   },
 

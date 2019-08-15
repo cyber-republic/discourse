@@ -81,6 +81,7 @@
   .actions {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
     margin-top: s(2);
 
     .sources {
