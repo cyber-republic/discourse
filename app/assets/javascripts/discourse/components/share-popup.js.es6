@@ -108,7 +108,6 @@ export default Ember.Component.extend({
   },
 
   _clickHandler(event) {
-	alert(/_clickHandler/)
     if (!this.element || this.isDestroying || this.isDestroyed) {
       return;
     }
