@@ -60,12 +60,13 @@ export default {
     const stringOptions = Object.keys(options)
       .map(k => `${k}=${options[k]}`)
       .join(",");
-
-    if (source.shouldOpenInPopup) {
-      window.open(url, "", stringOptions);
-    } else {
-      window.open(url, "_blank");
-    }
+    if(url.toString()!=="http") {
+      if (source.shouldOpenInPopup) {
+        window.open(url, "", stringOptions);
+      } else {
+        window.open(url, "_blank");
+      }
+   }
   },
 
   activeSources(linksSetting = "") {

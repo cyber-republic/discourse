@@ -66,9 +66,9 @@ export default {
       id: 'weixin',
       icon: 'fab-weixin',
       title: I18n.t('share.weixin'),
-      shouldOpenInPopup: true,
+      shouldOpenInPopup: false,
       generateUrl(link, title) {
-          return "";
+          return "http";
       }
 
     });
