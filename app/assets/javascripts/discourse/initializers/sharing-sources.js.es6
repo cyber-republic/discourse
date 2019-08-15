@@ -62,5 +62,16 @@ export default {
 
     });
 
+    Sharing.addSource({
+      id: 'weixin',
+      icon: 'fab-weixin',
+      title: I18n.t('share.weixin'),
+      shouldOpenInPopup: true,
+      generateUrl(link, title) {
+          return "";
+      }
+
+    });
+
   }
 };
