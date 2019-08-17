@@ -146,6 +146,7 @@ en:
       email: "Send this link in an email"
       weibo: "Share this link on Weibo"
       weixin: "Share this link on Wechat"
+      weixin_desc: "WeChat to scan qrcode"
 
     action_codes:
       public_topic: "made this topic public %{when}"

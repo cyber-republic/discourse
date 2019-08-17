@@ -97,6 +97,7 @@ zh_TW:
       email: "以電子郵件傳送連結"
       weibo: "分享連結到 微博"
       weixin: "分享連結到 微信"
+      weixin_desc: "微信掃一掃分享"
 
     action_codes:
       public_topic: "於 %{when}發佈這個話題"

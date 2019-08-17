@@ -97,6 +97,7 @@ zh_CN:
       email: "通过电子邮件分享"
       weibo: "分享到 微博"
       weixin: "分享到 微信"
+      weixin_desc: "微信扫一扫分享"
 
     action_codes:
       public_topic: "于%{when}设置为公共主题"
