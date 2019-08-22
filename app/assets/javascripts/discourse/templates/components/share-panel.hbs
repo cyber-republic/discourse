@@ -10,5 +10,13 @@
     {{#each sources as |source|}}
       {{share-source source=source title=topic.title action=(action "share")}}
     {{/each}}
+
+    <div class="" style="width: 90%; margin: 0 auto;">
+      <span style="display: block; width: 100%; height: 25px; text-align: center;">
+        {{i18n "share.weixin_desc"}}
+      </span>
+      <canvas id='zqw' style="width: 100%;height:100%"></canvas>
+    </div>
+
   </div>
 </div>

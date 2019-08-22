@@ -45,6 +45,12 @@ export default Ember.Component.extend({
     const $linkForTouch = this.$(".topic-share-url-for-touch a");
 
     Ember.run.schedule("afterRender", () => {
+
+      new QRious({ //
+        element: document.getElementById("zqw"),
+        value: this.shareUrl
+      });
+
       if (!this.capabilities.touch) {
         $linkForTouch.parent().remove();
 
