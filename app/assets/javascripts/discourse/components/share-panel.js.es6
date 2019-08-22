@@ -44,7 +44,14 @@ export default Ember.Component.extend({
     const $linkInput = this.$(".topic-share-url");
     const $linkForTouch = this.$(".topic-share-url-for-touch a");
 
+
     Ember.run.schedule("afterRender", () => {
+
+	    new QRious({
+      element: document.getElementById("qrimgshare"),
+      value: this.shareUrl
+    });
+
       if (!this.capabilities.touch) {
         $linkForTouch.parent().remove();
 
@@ -60,7 +67,8 @@ export default Ember.Component.extend({
         const range = window.document.createRange();
         range.selectNode($linkForTouch[0]);
         window.getSelection().addRange(range);
-      }
+	
+     }
     });
   },
 
@@ -70,6 +78,7 @@ export default Ember.Component.extend({
         url: this.shareUrl,
         title: this.get("topic.title")
       });
+
     }
   }
 });
